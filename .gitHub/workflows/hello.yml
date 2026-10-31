@@ -1,0 +1,19 @@
+# workflow
+# should have name
+name: Hello
+
+# on tell when the workflow will run
+on:
+  workflow_dispatch: 
+    
+# jobs
+# should be inside workflow
+# 
+jobs:
+  say-hello:
+    # creates ab ephermal container with ubuntu running
+    runs-on: ubuntu-latest
+    # that ephermal container will have steps to execute, hence use those steps and use run: (run has the command).
+    steps:
+      - name: Say Hello to everyone
+        run: echo "Hello Dosto"
